@@ -1,3 +1,4 @@
+import java.lang.management.GarbageCollectorMXBean;
 
 public class Runner {
     /**
@@ -22,6 +23,7 @@ public class Runner {
      * @param in the String value you should change global_var to in.
      */
     public void changeClassVar(String in){
-
+        //Static varibles can be access without creating an object of the class
+        Class.global_var = in;
     }
 }
